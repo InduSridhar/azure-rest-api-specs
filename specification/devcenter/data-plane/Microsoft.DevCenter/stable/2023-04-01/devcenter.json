@@ -2054,7 +2054,8 @@
       "description": "DevCenter API versions",
       "enum": [
         "2023-04-01",
-        "2024-02-01"
+        "2024-02-01",
+        "2024-05-01-preview"
       ],
       "x-ms-enum": {
         "name": "APIVersions",
@@ -2069,6 +2070,11 @@
             "name": "v2024_02_01",
             "value": "2024-02-01",
             "description": "The 2024-02-01 service API version"
+          },
+          {
+            "name": "v2024_05_01_preview",
+            "value": "2024-05-01-preview",
+            "description": "The 2024-05-01 service API version"
           }
         ]
       }

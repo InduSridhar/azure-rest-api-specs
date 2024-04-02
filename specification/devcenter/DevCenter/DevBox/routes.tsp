@@ -235,6 +235,19 @@ interface DevBoxes {
     }
   >;
 
+  @doc("""
+    Lists customization groups on the Dev Box. Listed customization groups exclude 
+    task information unless specified via the include parameter.
+  """)
+  @added(APIVersions.v2024_02_01)
+  listCustomizationGroups is StandardResourceOperations.ResourceList<CustomizationGroup>;
+
+  @doc("""
+    Gets a customization group.
+  """)
+  @added(APIVersions.v2024_02_01)
+  getCustomizationGroup is StandardResourceOperations.ResourceRead<CustomizationGroup>;
+
   #suppress "@azure-tools/typespec-azure-core/use-standard-operations" "can not be represeted by using stand operations"
   //There is no @key for RemoteConnection model
   @doc("Gets RDP Connection info.")
